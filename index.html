@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portifolio website</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="assests/logo.png" class="logo" />
+				<ul id="sidemenu">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolio">Portifolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<i class="ri-close-line fas" onclick="closemenu()"></i>
+				</ul>
+				<i class="ri-menu-line fas" onclick="openmenu()"></i>
+			</nav>
+			<div class="header-text">
+				<p><b><span>FIRST,</span></b><br>WWW Developer</p>
+				<h1>Hi, I'm <span>Tim Berners-Lee</span>
+					<br>From America
+				</h1>
+			</div>
+		</div>
+	</div>
+	<!---------------about---------  -->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="assests/tm4.webp" />
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p>Sir Timothy John Berners-Lee OM KBE FRS RDI FRSA DFBCS FREng, also known as TimBL, is an English
+						computer scientist best known as the inventor of the World Wide Web, the HTML markup language,
+						the URL system, and HTTP.</p>
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+						<p class="tab-links" onclick="opentab('achievements')"><b>Achievements</b></p>
+						<p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
+					</div>
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>WWW</span><br> Designing a World Wide Webs..</li>
+							<li><span>Web development</span><br> Sir Tim is also credited for creating the world’s first
+								web
+								browser and editor. </li>
+							<li><span>Web Foundation</span><br> He founded the World Wide Web Foundation and directs the
+								World Wide Web Consortium (W3C).</li>
+
+						</ul>
+					</div>
+					<div class="tab-contents" id="achievements">
+						<ul>
+							<li><span>1998</span><br>MacArthur Fellowship </li>
+							<li><span>2006</span><br>The President's Medal,.</li>
+							<li><span>2013</span><br>Queen Elizabeth Prize for Engineering</li>
+							<li><span>2017</span><br>Turing Award</li>
+						</ul>
+					</div>
+					<div class="tab-contents " id="experience">
+						<ul>
+							<li><span>Web Invention</span><br>Sir Tim Berners-Lee created the World Wide Web 28 years
+								ago.
+							</li>
+							<li><span>Proposals</span><br>[March 12] marks 28 years since I submitted my original
+								proposal for the world wide web.</li>
+							<li><span>Three Challenges</span><br>The ability to easily spread misinformation, lose of
+								control over personal data, and political advertising.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-----------------------------services-------------------->
+	<div id="services">
+		<div class="container">
+			<h1 class="sub-title">My Services</h1>
+			<div class="services-list">
+				<div>
+					<i class="ri-code-box-fill"></i>
+					<h2>WWW Design</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo modi quidem inventore architecto
+						ipsum, impedit nobis, illo officiis quod incidunt quam vero natus hic, provident nihil doloribus
+						sit. Quos, quo!</p>
+					<a href="#">Learn More</a>
+				</div>
+				<div>
+					<i class="ri-pages-fill"></i>
+					<h2>Web Browser</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo modi quidem inventore architecto
+						ipsum, impedit nobis, illo officiis quod incidunt quam vero natus hic, provident nihil doloribus
+						sit. Quos, quo!</p>
+					<a href="#">Learn More</a>
+				</div>
+				<div>
+					<i class="ri-server-fill"></i>
+					<h2>Web Server</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo modi quidem inventore architecto
+						ipsum, impedit nobis, illo officiis quod incidunt quam vero natus hic, provident nihil doloribus
+						sit. Quos, quo!</p>
+					<a href="#">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--------------------portfolio------------>
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">My Work</h1>
+			<div class="work-list">
+				<div class="work">
+					<img src="assests/tm1.jpg" height="350" />
+					<div class="layer">
+						<h3>Social Media Web</h3>
+						<p>The web connects you to the talented people arounnd the world.
+							Search it from Google Chrome
+						</p>
+						<a href="#"><i class="ri-google-fill"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="assests/tm6.jpeg" height="350" width="620" />
+					<div class="layer">
+						<h3>Web Foundation</h3>
+						<p>The web connects you to the talented people arounnd the world.
+							Search it from Google Chrome
+						</p>
+						<a href="#"><i class="ri-discuss-fill"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="assests/tm3.jpg" height="350" />
+					<div class="layer">
+						<h3>Create Websites</h3>
+						<p>The web connects you to the talented people arounnd the world.
+							Search it from Google Chrome
+						</p>
+						<a href="#"><i class="ri-link-m"></i></a>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="btn">See More</a>
+		</div>
+	</div>
+	<!---------------------- Contact----------->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="sub-title">Contact Me</h1>
+					<p><i class="ri-send-plane-fill"></i> contact37@example.com</p>
+					<p><i class="ri-phone-fill"></i> 7992582639</p>
+					<div class="social-icons">
+						<a href="#"><i class="ri-facebook-fill"></i></a>
+						<a href="#"><i class="ri-linkedin-box-fill"></i></a>
+						<a href="#"><i class="ri-instagram-fill"></i></a>
+						<a href="#"><i class="ri-twitter-fill"></i></a>
+					</div>
+					<a href="#" class="btn btn2">Download CV</a>
+				</div>
+				<div class="contact-right">
+					<form>
+						<input type="text" name="Name" placeholder="Enter your name" required>
+						<input type="email" name="email" placeholder="Enter your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>Copyright &copy; made by <span><b>SARITHA MADDALA</b></span> <i class="ri-hearts-fill"></i> || All rights
+				reserved</p>
+		</div>
+
+	</div>
+
+
+
+
+	<script>
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+		function opentab(tabname) {
+			for (tablink of tablinks) {
+				tablink.classList.remove("active-link");
+			}
+			for (tabcontent of tabcontents) {
+				tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
+		}
+	</script>
+
+	<script>
+		var sidemen = document.getElementById("sidemenu");
+
+		function openmenu() {
+			sidemen.style.right = "0";
+		}
+		function closemenu() {
+			sidemen.style.right = "-200px";
+		}
+	</script>
+</body>
+
+</html>
